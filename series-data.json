@@ -1,0 +1,36 @@
+[
+    {
+      "id": 1,
+      "title": "धोखे की दुनिया",
+      "description": "यह सीरीज़ आपको दिखाएगी कि कैसे अंधविश्वास और भ्रम के जरिए लोगों को फंसाया जाता है।",
+      "image": "assets/images/series1.jpg",
+      "icon": "assets/icons/trap.svg",
+      "link": "series/dhokhe-ki-duniya.html"
+    },
+    {
+      "id": 2,
+      "title": "स्वास्थ्य की सच्चाई",
+      "description": "इसमें हम स्वास्थ्य से जुड़े मिथकों और असल तथ्यों को सामने लाते हैं।",
+      "image": "assets/images/series2.jpg",
+      "icon": "assets/icons/health.svg",
+      "link": "series/health-truth.html"
+    },
+    {
+      "id": 3,
+      "title": "शिक्षा का अंधेरा",
+      "description": "शिक्षा के नाम पर हो रहे शोषण और झूठे वादों की पोल खोलती सीरीज़।",
+      "image": "assets/images/series3.jpg",
+      "icon": "assets/icons/education.svg",
+      "link": "series/education-exposed.html"
+    },
+    {
+      "id": 4,
+      "title": "धर्म की दुकाने",
+      "description": "धर्म के नाम पर कैसे भावनाओं से खेला जाता है, इसका गहरा विश्लेषण।",
+      "image": "assets/images/series4.jpg",
+      "icon": "assets/icons/religion.svg",
+      "link": "series/dharm-dhandha.html"
+    }
+  ]
+  
+  
