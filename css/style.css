@@ -702,3 +702,46 @@ footer {
     .cta-container { gap: 1.5rem; }
     .cta { min-width: 280px; }
 }
+/* Additional Styles for Hamburger Menu (No Change to Existing Styles) */
+.nav-toggle {
+    display: none; /* Hidden by default on desktop */
+  }
+  
+  .hamburger {
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+  
+  .nav-links {
+    display: flex; /* Default flex behavior from existing CSS */
+  }
+  
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Matches navbar height */
+    left: 0;
+    width: 200px;
+    background: #007bff; /* Matches navbar background */
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Media Query to Show Hamburger on Mobile */
+  @media (max-width: 768px) {
+    .nav-toggle {
+      display: block; /* Show hamburger on mobile */
+    }
+    .logo {
+      display: none; /* Hide SKL logo on mobile */
+    }
+    .nav-links {
+      display: none; /* Hide links by default on mobile */
+    }
+    .nav-links.active {
+      display: flex; /* Show links when active */
+    }
+  }
