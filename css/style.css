@@ -730,34 +730,27 @@ footer {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
-  /* Media Query to Show Hamburger on Mobile */
-  @media (max-width: 768px) {
-    .nav-toggle {
-      display: block; /* Show hamburger on mobile */
-    }
-    .logo {
-      display: none; /* Hide SKL logo on mobile */
-    }
-    .nav-links {
-      display: none; /* Hide links by default on mobile */
-    }
-    .nav-links.active {
-      display: flex; /* Show links when active */
-    }
-  }
-  /* Layout Adjustment for Mobile Only (Logo on Left, Hamburger on Right) */
+ /* Layout Adjustment for Mobile Only (Logo on Left, Hamburger on Right) */
 @media (max-width: 768px) {
     .main-nav {
-      display: flex; /* Ensure flex is explicitly set for mobile */
-      justify-content: space-between; /* Logo left, toggle right */
+      display: flex; /* Ensure flex is set */
+      flex-direction: row; /* Explicitly set to horizontal */
+      justify-content: space-between; /* Logo on left, hamburger on right */
       align-items: center; /* Vertically center items */
-      width: 100%; /* Ensure full width */
+      width: 100%; /* Full width */
+      padding: 1rem; /* Adjust padding for mobile */
     }
     .logo {
       order: 1; /* Logo on left */
-      display: none; /* Already hidden per existing rule */
+      display: none; /* Hidden on mobile */
     }
     .nav-toggle {
       order: 2; /* Hamburger on right */
+    }
+    .nav-links {
+      display: none; /* Ensure links are hidden by default */
+    }
+    .nav-links.active {
+      display: flex; /* Show links when active */
     }
   }
