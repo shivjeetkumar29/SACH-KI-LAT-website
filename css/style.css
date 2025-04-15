@@ -748,13 +748,16 @@ footer {
   /* Layout Adjustment for Mobile Only (Logo on Left, Hamburger on Right) */
 @media (max-width: 768px) {
     .main-nav {
-      justify-content: space-between; /* Ensures logo stays left and toggle stays right */
-      align-items: center; /* Keeps items vertically centered */
+      display: flex; /* Ensure flex is explicitly set for mobile */
+      justify-content: space-between; /* Logo left, toggle right */
+      align-items: center; /* Vertically center items */
+      width: 100%; /* Ensure full width */
     }
     .logo {
-      order: 1; /* Keeps logo on left */
+      order: 1; /* Logo on left */
+      display: none; /* Already hidden per existing rule */
     }
     .nav-toggle {
-      order: 2; /* Moves hamburger to right */
+      order: 2; /* Hamburger on right */
     }
   }
