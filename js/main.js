@@ -1,4 +1,4 @@
-// js/script.js - JavaScript for Dynamic Functionality
+// js/main.js - JavaScript for Dynamic Functionality
 
 // Check Login Status and Auto-fill Blog Details
 document.addEventListener('DOMContentLoaded', () => {
