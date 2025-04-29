@@ -73,3 +73,13 @@ if (!navLinks.contains(event.target) && !hamburger.contains(event.target)) {
   navLinks.classList.remove('active');
 }
 });
+
+fetch('http://13.233.9.148:5000/api/data')
+
+  .then(response => response.json())
+  .then(data => {
+      console.log(data); // Backend se response
+  })
+  .catch(error => {
+      console.error('Error:', error); // Agar error aaye toh
+  });
